@@ -1,3 +1,6 @@
+Подключил GitHub Pages для покрытия!
+https://slavavf.github.io/fastapi_hw_tests/
+
 Устанавливаем все необходимое:
 pip install -r src/requirements.txt
 pip install -r tests/requirements-dev.txt
