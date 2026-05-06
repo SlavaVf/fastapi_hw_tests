@@ -1,0 +1,15 @@
+Устанавливаем все необходимое:
+pip install -r src/requirements.txt
+pip install -r tests/requirements-dev.txt
+
+Запускаем ФастАПИ:
+uvicorn src.main:app --reload --port 8000
+
+Запуск тестов:
+python -m pytest tests/test_main.py --cov=. --cov-report=html
+
+Просмотр HTMLки с тестами:
+start htmlcov\index.html
+
+locust тестирование:
+locust -f tests/locustfile.py --host=http://localhost:8000
